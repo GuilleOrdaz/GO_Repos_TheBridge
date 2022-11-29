@@ -71,6 +71,28 @@ FROM VENTA v;
 
 ## 8. Genere una o varias consultas que devulevan las combinaciones de familias y 
 ##campañas cuya venta haya sido superior a 100€.
+SELECT d.id_campania, sum(v.precio) as 'PRECIO'
+FROM articulo a
+left join venta v
+ON a.referencia=v.referencia
+left join depto_campania d
+on d.id_dpto=a.id_dpto
+left join campanias c
+on c.id_campania=d.id_campania
+group by c.id_campania
+HAVING  sum(v.precio) > 100
+order by ID_CAMPANIA;
+
+#### 9. Genere una o varias consultas que permitan catalogar los artículos vendidos 
+##y que no son de la Campaña CA1, según si se tratan de artículos de Ropa o Accesorios. 
+##En base a los departamentos y familias.### NOTA: Se valorará la elaboración de la consulta 
+##y no la veracidad del propio catálogo)
+
+SELECT *
+FROM depto_campania de
+LEFT JOIN venta v
+on de.ID_CAMPANIA = v.precio
+where de.ID_CAMPANIA != 'CA1';
 
 
 
