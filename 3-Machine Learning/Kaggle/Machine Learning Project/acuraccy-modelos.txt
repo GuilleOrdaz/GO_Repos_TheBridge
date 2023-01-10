@@ -1,0 +1,29 @@
+sin nada				
+			
+MODELO REGRESION LOGÍSTICA		
+Accuracy test 0.8016101207590569
+Accuracy train 0.787316652286453
+
+con max iter= 80
+MODELO REGRESION LOGÍSTICA
+Accuracy test 0.8021851638872916
+Accuracy train 0.7876042565429968
+
+con max_iter = 110
+MODELO REGRESION LOGÍSTICA
+Accuracy test 0.8050603795284647
+Accuracy train 0.7857348288754673v
+
+con max_iter = 120
+MODELO REGRESION LOGÍSTICA
+Accuracy test 0.8050603795284647
+Accuracy train 0.7858786310037389
+
+MODELO SVC sin nada
+Accuracy test 0.7929844738355377
+Accuracy train 0.7877480586712683
+
+
+
+
+
